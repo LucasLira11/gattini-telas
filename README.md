@@ -105,6 +105,11 @@ com as palavras pelas quais ela deve ser encontrada.
 `:root`. O tema escuro repete os mesmos nomes mais abaixo — mude nos dois
 lugares.
 
+**Depois de editar o CSS ou o JS,** aumente o número em
+`assets/styles.css?v=3` e `assets/app.js?v=3`, dentro do `index.html`. Sem
+isso, quem já visitou o site continua vendo a versão antiga por alguns
+minutos, porque o navegador guarda esses arquivos em cache.
+
 **Trocar as cores:** os tokens vivem no topo de `assets/styles.css`, no bloco
 `:root`. O tema escuro repete os mesmos nomes logo abaixo — mude nos dois
 lugares e o site inteiro acompanha.
