@@ -169,7 +169,9 @@ a:hover{color:var(--gold-ink);text-decoration-color:currentColor}
   height:var(--topo);display:flex;align-items:center;gap:16px;
 }
 .marca{display:flex;align-items:center;text-decoration:none;flex:0 0 auto}
-.marca .logo{height:50px;width:auto;display:block}
+/* Sem `display` aqui de propósito: quem manda no display do logo são as
+   regras de tema logo abaixo, que têm especificidade menor. */
+.marca .logo{height:50px;width:auto}
 
 /* O logo tem duas artes: tinta escura para fundo claro, branca para fundo
    escuro. Só uma aparece por vez, nos três estados de tema. */
@@ -643,7 +645,7 @@ ol.combinado > li::before{
 
 /* ---------- 14. rodapé ---------- */
 .rodape{border-top:1px solid var(--line);padding-block:clamp(36px,5vw,56px) clamp(48px,6vw,72px);display:flex;flex-direction:column;gap:22px}
-.rodape .id .logo{width:min(340px,86%);height:auto;display:block}
+.rodape .id .logo{width:min(340px,86%);height:auto}
 .rodape .miudo{display:flex;flex-direction:column;gap:12px;max-width:66ch}
 .rodape p{font-size:.8125rem;color:var(--ink-3);line-height:1.7}
 .rodape .resp{font-size:.875rem;color:var(--ink-2);font-weight:500}
