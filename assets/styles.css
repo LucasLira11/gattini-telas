@@ -19,7 +19,7 @@
   --ambar-suave:#f2e2cb;
   --sombra:0 1px 2px rgba(47,33,24,.07), 0 12px 28px -20px rgba(47,33,24,.45);
   --raio:12px;
-  --topo:60px;
+  --topo:66px;
 }
 
 @media (prefers-color-scheme: dark){
@@ -100,10 +100,22 @@ h3{font-size:1.2rem;font-weight:600}
 .cabecalho .wrap{
   height:var(--topo);display:flex;align-items:center;gap:16px;
 }
-.marca{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--tinta);flex:0 0 auto}
-.marca img{height:30px;width:auto;display:block}
-.marca .nome{font-family:Newsreader,Georgia,serif;font-size:1.2rem;font-weight:600;letter-spacing:-.01em}
-.marca .tipo{font-size:.62rem;text-transform:uppercase;letter-spacing:.16em;color:var(--tinta-fraca);font-weight:700;display:block;line-height:1.2}
+.marca{display:flex;align-items:center;text-decoration:none;flex:0 0 auto;min-width:104px}
+.marca .logo{height:38px;width:auto;display:block}
+@media (max-width:420px){.marca .logo{height:32px}.marca{min-width:88px}}
+
+/* O logo tem duas artes: tinta escura para fundo claro, branca para fundo escuro.
+   A troca segue os três estados de tema — sistema, claro forçado, escuro forçado. */
+.logo-escuro{display:none}
+.logo-claro{display:block}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .logo-claro{display:none}
+  :root:not([data-theme="light"]) .logo-escuro{display:block}
+}
+:root[data-theme="dark"] .logo-claro{display:none}
+:root[data-theme="dark"] .logo-escuro{display:block}
+:root[data-theme="light"] .logo-claro{display:block}
+:root[data-theme="light"] .logo-escuro{display:none}
 
 .nav{margin-left:auto;display:flex;align-items:center;gap:4px}
 .nav a{
@@ -301,9 +313,8 @@ code{font-family:Karla,monospace;font-weight:700;font-variant-numeric:tabular-nu
 
 /* ---------- rodapé ---------- */
 .rodape{padding-block:34px 60px;border-top:1px solid var(--linha);margin-top:8px;display:flex;flex-direction:column;gap:14px}
-.rodape .id{display:flex;align-items:center;gap:10px}
-.rodape .id img{height:26px;width:auto}
-.rodape .id .nome{font-family:Newsreader,Georgia,serif;font-size:1.05rem;font-weight:600}
+.rodape .id{display:flex;align-items:center}
+.rodape .id .logo{width:min(290px,80%);height:auto}
 .rodape p{font-size:.82rem;color:var(--tinta-fraca);max-width:64ch}
 
 /* ---------- impressão ---------- */
@@ -311,6 +322,9 @@ code{font-family:Karla,monospace;font-weight:700;font-variant-numeric:tabular-nu
   :root{--areia:#fff;--creme:#fff;--creme-2:#f2f2f2;--tinta:#000;--tinta-suave:#333;--tinta-fraca:#555;--linha:#bbb;--linha-forte:#999;--terra:#000;--terra-esc:#000;--terra-suave:#f0f0f0;--ambar-suave:#f6f6f6;--sombra:none}
   body{background:#fff;color:#000;font-size:10.5pt}
   .cabecalho,.acoes,.chev,.tema,.busca,.pular{display:none!important}
+  /* no papel o fundo é sempre branco: vale a arte em tinta escura */
+  .logo-escuro{display:none!important}
+  .logo-claro{display:block!important}
   section{border-bottom:0;padding-block:16px;break-inside:auto}
   .heroi{padding-block:0 16px}
   details.ficha,.escolha,.painel{box-shadow:none;break-inside:avoid;border-color:#bbb}

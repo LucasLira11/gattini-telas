@@ -10,11 +10,17 @@ gattini-telas/
 ├── assets/
 │   ├── styles.css        ← paleta areia e terra, tema claro e escuro, impressão
 │   └── app.js            ← tema, busca, abrir/fechar fichas, PDF
-└── public/
-    ├── favicon.svg       ← provisório, pode trocar
-    ├── logo-gattini.svg  ← COLOQUE O LOGO AQUI
-    └── capa.png          ← 1200×630, prévia do WhatsApp
+├── public/
+│   ├── logo-gattini-dark.png   ← logo em tinta, para o tema claro e a impressão
+│   ├── logo-gattini-white.png  ← logo em branco, para o tema escuro
+│   ├── capa.png                ← 1200×630, cartão do WhatsApp
+│   └── favicon.png             ← o "G" do logo
+└── docs/
+    ├── PROMPT.md               ← especificação para regerar o site em Astro
+    └── gerar-capa.ps1          ← refaz capa.png e favicon.png a partir do logo
 ```
+
+**No ar em:** <https://lucaslira11.github.io/gattini-telas/>
 
 Leia `public/LEIA-ME.md` para as especificações do logo e da capa.
 
@@ -77,10 +83,11 @@ Depois de configurar o domínio, atualize a linha `<link rel="canonical">` no
 
 ## Antes de divulgar
 
-- [ ] Colocar `logo-gattini.svg` e `capa.png` em `public/`
+- [x] Colocar o logo, a capa e o favicon em `public/`
 - [ ] Preencher nome e CRP do responsável técnico no rodapé do `index.html`
       (procure por `[nome]` e `CRP [número]`)
-- [ ] Atualizar o `<link rel="canonical">` com o domínio real
+- [ ] Ao trocar de domínio, atualizar as três linhas do `index.html` que trazem
+      o endereço por extenso: `canonical`, `og:url` e `og:image`
 - [ ] Abrir o link no celular e conferir o tema escuro
 - [ ] Testar o botão **Salvar em PDF**
 - [ ] Colar o link numa conversa do WhatsApp e ver se o cartão aparece certo
