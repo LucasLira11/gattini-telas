@@ -254,6 +254,7 @@ a:hover{color:var(--brand-hover);text-decoration-color:currentColor}
 }
 @media (max-width:900px){.indice{display:none}}
 .indice .rotulo{padding-inline:12px;margin-bottom:6px}
+.indice nav{display:flex;flex-direction:column;gap:2px}
 .indice a{
   position:relative;font-size:.9rem;font-weight:500;color:var(--ink-3);
   text-decoration:none;padding:8px 12px;border-radius:var(--r-sm);
