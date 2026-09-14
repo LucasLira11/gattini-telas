@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
@@ -122,8 +122,8 @@
         <h1>Telas em Família</h1>
         <p class="chamada">Os aplicativos que fazem o trabalho pesado sozinhos — filtro do Wi-Fi, horário de dormir e limite por aplicativo — escolhidos para quem não tem paciência com configuração.</p>
         <div class="heroi-acoes">
-          <a class="btn btn-1" href="#recomendados">Ver as ferramentas</a>
-          <button class="btn btn-2" id="expandir" type="button"><svg aria-hidden="true"><use href="#i-expandir"></use></svg><span>Abrir todos os passos</span></button>
+          <a class="btn btn-1" href="#tutorial-iphone"><span class="marca-glifo g-apple" style="--cor:currentColor" aria-hidden="true"></span>Ver o tutorial do iPhone</a>
+          <a class="btn btn-2" href="#tutoriais">Ver todos os tutoriais</a>
           <button class="btn btn-3" id="imprimir" type="button"><svg aria-hidden="true"><use href="#i-impr"></use></svg>Salvar em PDF</button>
         </div>
       </div>
@@ -323,59 +323,59 @@
           <tbody>
             <tr>
               <td class="ferr"><span class="marca-cel"><span class="marca-tile sm"><svg style="width:19px;height:19px;color:var(--brand)" aria-hidden="true"><use href="#i-wifi"></use></svg></span><span>App da operadora<span class="sub">Vivo, Claro, TIM</span></span></span></td>
-              <td><span class="sim"><svg aria-hidden="true"><use href="#i-check-c"></use></svg>Sim</span></td>
-              <td><span class="nao"><svg aria-hidden="true"><use href="#i-traco-c"></use></svg>Não</span></td>
-              <td><span class="nao"><svg aria-hidden="true"><use href="#i-traco-c"></use></svg>Básico</span></td>
-              <td><span class="nao"><svg aria-hidden="true"><use href="#i-traco-c"></use></svg>Não</span></td>
-              <td>Incluso</td>
-            </tr>
-            <tr>
-              <td class="ferr"><span class="marca-cel"><span class="marca-tile sm"><span class="marca-glifo g-tplink"></span></span><span>TP-Link Deco<span class="sub">HomeShield Pro</span></span></span></td>
-              <td><span class="sim"><svg aria-hidden="true"><use href="#i-check-c"></use></svg>Sim</span></td>
-              <td><span class="nao"><svg aria-hidden="true"><use href="#i-traco-c"></use></svg>Não</span></td>
-              <td><span class="sim"><svg aria-hidden="true"><use href="#i-check-c"></use></svg>Sim<span class="sub">por faixa etária</span></span></td>
-              <td><span class="nao"><svg aria-hidden="true"><use href="#i-traco-c"></use></svg>Não</span></td>
-              <td>Aparelho + anual</td>
-            </tr>
-            <tr>
-              <td class="ferr"><span class="marca-cel"><span class="marca-tile sm"><span class="letra-marca">Q</span></span><span>Qustodio<span class="sub">Todos os aparelhos</span></span></span></td>
-              <td><span class="sim"><svg aria-hidden="true"><use href="#i-check-c"></use></svg>Sim</span></td>
-              <td><span class="sim"><svg aria-hidden="true"><use href="#i-check-c"></use></svg>Sim</span></td>
-              <td><span class="sim"><svg aria-hidden="true"><use href="#i-check-c"></use></svg>Sim</span></td>
-              <td><span class="sim"><svg aria-hidden="true"><use href="#i-check-c"></use></svg>Sim</span></td>
-              <td>Anual</td>
-            </tr>
-            <tr>
-              <td class="ferr"><span class="marca-cel"><span class="marca-tile sm"><span class="marca-glifo g-nextdns"></span></span><span>NextDNS<span class="sub">Rede + app</span></span></span></td>
-              <td><span class="nao"><svg aria-hidden="true"><use href="#i-traco-c"></use></svg>Não</span></td>
-              <td><span class="nao"><svg aria-hidden="true"><use href="#i-traco-c"></use></svg>Não</span></td>
-              <td><span class="sim"><svg aria-hidden="true"><use href="#i-check-c"></use></svg>Sim<span class="sub">por categoria</span></span></td>
-              <td><span class="sim"><svg aria-hidden="true"><use href="#i-check-c"></use></svg>Sim</span></td>
-              <td>Anual barato</td>
+              <td data-col="Horários"><span class="sim"><svg aria-hidden="true"><use href="#i-check-c"></use></svg>Sim</span></td>
+              <td data-col="Tempo por app"><span class="nao"><svg aria-hidden="true"><use href="#i-traco-c"></use></svg>Não</span></td>
+              <td data-col="Filtro de sites"><span class="nao"><svg aria-hidden="true"><use href="#i-traco-c"></use></svg>Básico</span></td>
+              <td data-col="Vale no 4G"><span class="nao"><svg aria-hidden="true"><use href="#i-traco-c"></use></svg>Não</span></td>
+              <td data-col="Custo">Incluso</td>
             </tr>
             <tr>
               <td class="ferr"><span class="marca-cel"><span class="marca-tile sm"><span class="marca-glifo g-apple"></span></span><span>Tempo de Uso<span class="sub">iPhone, iPad, Mac</span></span></span></td>
-              <td><span class="sim"><svg aria-hidden="true"><use href="#i-check-c"></use></svg>Sim</span></td>
-              <td><span class="sim"><svg aria-hidden="true"><use href="#i-check-c"></use></svg>Sim</span></td>
-              <td><span class="sim"><svg aria-hidden="true"><use href="#i-check-c"></use></svg>Sim</span></td>
-              <td><span class="sim"><svg aria-hidden="true"><use href="#i-check-c"></use></svg>Sim</span></td>
-              <td>Grátis</td>
+              <td data-col="Horários"><span class="sim"><svg aria-hidden="true"><use href="#i-check-c"></use></svg>Sim</span></td>
+              <td data-col="Tempo por app"><span class="sim"><svg aria-hidden="true"><use href="#i-check-c"></use></svg>Sim</span></td>
+              <td data-col="Filtro de sites"><span class="sim"><svg aria-hidden="true"><use href="#i-check-c"></use></svg>Sim</span></td>
+              <td data-col="Vale no 4G"><span class="sim"><svg aria-hidden="true"><use href="#i-check-c"></use></svg>Sim</span></td>
+              <td data-col="Custo">Grátis</td>
             </tr>
             <tr>
               <td class="ferr"><span class="marca-cel"><span class="marca-tile sm"><span class="marca-glifo g-google"></span></span><span>Family Link<span class="sub">Android</span></span></span></td>
-              <td><span class="sim"><svg aria-hidden="true"><use href="#i-check-c"></use></svg>Sim</span></td>
-              <td><span class="sim"><svg aria-hidden="true"><use href="#i-check-c"></use></svg>Sim</span></td>
-              <td><span class="sim"><svg aria-hidden="true"><use href="#i-check-c"></use></svg>Só no Chrome</span></td>
-              <td><span class="sim"><svg aria-hidden="true"><use href="#i-check-c"></use></svg>Sim</span></td>
-              <td>Grátis</td>
+              <td data-col="Horários"><span class="sim"><svg aria-hidden="true"><use href="#i-check-c"></use></svg>Sim</span></td>
+              <td data-col="Tempo por app"><span class="sim"><svg aria-hidden="true"><use href="#i-check-c"></use></svg>Sim</span></td>
+              <td data-col="Filtro de sites"><span class="sim"><svg aria-hidden="true"><use href="#i-check-c"></use></svg>Só no Chrome</span></td>
+              <td data-col="Vale no 4G"><span class="sim"><svg aria-hidden="true"><use href="#i-check-c"></use></svg>Sim</span></td>
+              <td data-col="Custo">Grátis</td>
+            </tr>
+            <tr>
+              <td class="ferr"><span class="marca-cel"><span class="marca-tile sm"><span class="marca-glifo g-tplink"></span></span><span>TP-Link Deco<span class="sub">HomeShield Pro</span></span></span></td>
+              <td data-col="Horários"><span class="sim"><svg aria-hidden="true"><use href="#i-check-c"></use></svg>Sim</span></td>
+              <td data-col="Tempo por app"><span class="nao"><svg aria-hidden="true"><use href="#i-traco-c"></use></svg>Não</span></td>
+              <td data-col="Filtro de sites"><span class="sim"><svg aria-hidden="true"><use href="#i-check-c"></use></svg>Sim<span class="sub">por faixa etária</span></span></td>
+              <td data-col="Vale no 4G"><span class="nao"><svg aria-hidden="true"><use href="#i-traco-c"></use></svg>Não</span></td>
+              <td data-col="Custo">Aparelho + anual</td>
+            </tr>
+            <tr>
+              <td class="ferr"><span class="marca-cel"><span class="marca-tile sm"><span class="letra-marca">Q</span></span><span>Qustodio<span class="sub">Todos os aparelhos</span></span></span></td>
+              <td data-col="Horários"><span class="sim"><svg aria-hidden="true"><use href="#i-check-c"></use></svg>Sim</span></td>
+              <td data-col="Tempo por app"><span class="sim"><svg aria-hidden="true"><use href="#i-check-c"></use></svg>Sim</span></td>
+              <td data-col="Filtro de sites"><span class="sim"><svg aria-hidden="true"><use href="#i-check-c"></use></svg>Sim</span></td>
+              <td data-col="Vale no 4G"><span class="sim"><svg aria-hidden="true"><use href="#i-check-c"></use></svg>Sim</span></td>
+              <td data-col="Custo">Anual</td>
+            </tr>
+            <tr>
+              <td class="ferr"><span class="marca-cel"><span class="marca-tile sm"><span class="marca-glifo g-nextdns"></span></span><span>NextDNS<span class="sub">Rede + app</span></span></span></td>
+              <td data-col="Horários"><span class="nao"><svg aria-hidden="true"><use href="#i-traco-c"></use></svg>Não</span></td>
+              <td data-col="Tempo por app"><span class="nao"><svg aria-hidden="true"><use href="#i-traco-c"></use></svg>Não</span></td>
+              <td data-col="Filtro de sites"><span class="sim"><svg aria-hidden="true"><use href="#i-check-c"></use></svg>Sim<span class="sub">por categoria</span></span></td>
+              <td data-col="Vale no 4G"><span class="sim"><svg aria-hidden="true"><use href="#i-check-c"></use></svg>Sim</span></td>
+              <td data-col="Custo">Anual barato</td>
             </tr>
             <tr>
               <td class="ferr"><span class="marca-cel"><span class="marca-tile sm"><span class="ms-quad" aria-hidden="true"><i></i><i></i><i></i><i></i></span></span><span>Segurança da Família<span class="sub">Windows</span></span></span></td>
-              <td><span class="sim"><svg aria-hidden="true"><use href="#i-check-c"></use></svg>Sim</span></td>
-              <td><span class="sim"><svg aria-hidden="true"><use href="#i-check-c"></use></svg>Sim</span></td>
-              <td><span class="sim"><svg aria-hidden="true"><use href="#i-check-c"></use></svg>Só no Edge</span></td>
-              <td><span class="nao"><svg aria-hidden="true"><use href="#i-traco-c"></use></svg>—</span></td>
-              <td>Grátis</td>
+              <td data-col="Horários"><span class="sim"><svg aria-hidden="true"><use href="#i-check-c"></use></svg>Sim</span></td>
+              <td data-col="Tempo por app"><span class="sim"><svg aria-hidden="true"><use href="#i-check-c"></use></svg>Sim</span></td>
+              <td data-col="Filtro de sites"><span class="sim"><svg aria-hidden="true"><use href="#i-check-c"></use></svg>Só no Edge</span></td>
+              <td data-col="Vale no 4G"><span class="nao"><svg aria-hidden="true"><use href="#i-traco-c"></use></svg>—</span></td>
+              <td data-col="Custo">Grátis</td>
             </tr>
           </tbody>
         </table>
@@ -389,10 +389,13 @@
         <p>Toque em uma ficha para abrir os passos. Os nomes entre <span class="tecla">molduras</span> são exatamente o que aparece escrito na tela do aparelho.</p>
       </div>
 
-      <div class="busca">
-        <svg aria-hidden="true"><use href="#i-lupa"></use></svg>
-        <label class="pular" for="q">Buscar tutorial</label>
-        <input type="search" id="q" placeholder="Buscar: iPhone, Android, Wi-Fi, YouTube…" autocomplete="off">
+      <div class="ferramentas-busca">
+        <div class="busca">
+          <svg aria-hidden="true"><use href="#i-lupa"></use></svg>
+          <label class="pular" for="q">Buscar tutorial</label>
+          <input type="search" id="q" placeholder="Buscar: iPhone, Android, Wi-Fi, YouTube…" autocomplete="off">
+        </div>
+        <button class="btn btn-2" id="expandir" type="button"><svg aria-hidden="true"><use href="#i-expandir"></use></svg><span>Abrir todos os passos</span></button>
       </div>
 
       <div class="fichas" id="fichas">
@@ -436,6 +439,149 @@
                 <li>Dados móveis: o celular sai do Wi-Fi e continua navegando. Combine com a ficha do iPhone, do Android ou com o Qustodio.</li>
                 <li>Conteúdo impróprio — a maioria dos apps de operadora só liga e desliga a internet, não filtra.</li>
               </ul>
+            </div>
+          </div>
+        </details>
+
+        <details class="ficha destacada" id="tutorial-iphone" data-busca="iphone ipad apple tempo de uso screen time restricoes ios">
+          <summary>
+            <span class="marca-tile"><span class="marca-glifo g-apple"></span></span>
+            <span class="sum-txt">
+              <span class="etiq-top">Mais usado pelos nossos clientes</span>
+              <h3>iPhone e iPad — Tempo de Uso</h3>
+              <span class="quem">Gratuito e já está no aparelho. Se você não vai assinar nada, é aqui que o controle de horário e de tempo por app acontece.</span>
+            </span>
+            <span class="sum-meta">
+              <span class="n-passos">8 passos</span>
+              <svg class="chev" aria-hidden="true"><use href="#i-chev"></use></svg>
+            </span>
+          </summary>
+          <div class="corpo">
+            <div class="bloco b-antes">
+              <span class="rot"><svg aria-hidden="true"><use href="#i-alerta"></use></svg>Antes de começar</span>
+              <ul>
+                <li>O iPhone da criança em mãos — ou, se ela estiver no seu Compartilhamento Familiar, dá para fazer tudo do seu próprio iPhone.</li>
+                <li>Escolha um código de 4 dígitos <strong>diferente</strong> do código de desbloqueio do aparelho. É este passo que decide se o controle vai durar uma semana ou um ano.</li>
+              </ul>
+            </div>
+            <div class="progresso"><div class="trilho"><i></i></div><span class="cont"></span></div>
+            <ol class="passos">
+              <li><span class="passo-txt">Abra <span class="tecla">Ajustes</span> <span class="seta">›</span> <span class="tecla">Tempo de Uso</span>.</span></li>
+              <li><span class="passo-txt">Toque em <span class="tecla">Bloquear Ajustes do Tempo de Uso</span> e crie o código. Guarde-o fora do alcance dela; sem isso, qualquer limite é desfeito em dez segundos.</span></li>
+              <li><span class="passo-txt"><strong>Horário de dormir:</strong> toque em <span class="tecla">Tempo Longe da Tela</span>, ligue a chave e defina início e fim — por exemplo, das 21h30 às 6h30.</span></li>
+              <li><span class="passo-txt"><strong>Limite por aplicativo:</strong> volte e toque em <span class="tecla">Limites de App</span> <span class="seta">›</span> <span class="tecla">Adicionar Limite</span>. Marque a categoria (<span class="tecla">Redes Sociais</span>, <span class="tecla">Jogos</span>), toque em <span class="tecla">Avançar</span> e defina a duração diária.</span></li>
+              <li><span class="passo-txt">Ainda na tela do limite, ligue <span class="tecla">Bloquear no Fim do Limite</span>. Sem essa opção, o aviso é ignorado com um toque.</span></li>
+              <li><span class="passo-txt"><strong>Sites adultos:</strong> volte e toque em <span class="tecla">Restrições de Conteúdo e Privacidade</span> <span class="seta">›</span> <span class="tecla">Restrições de Conteúdo</span> <span class="seta">›</span> <span class="tecla">Conteúdo da Web</span> <span class="seta">›</span> <span class="tecla">Limitar Sites Adultos</span>.</span></li>
+              <li><span class="passo-txt"><strong>Travar instalação de apps:</strong> em <span class="tecla">Restrições de Conteúdo e Privacidade</span> <span class="seta">›</span> <span class="tecla">Compras na App Store</span>, defina <span class="tecla">Instalar Apps</span> como <span class="tecla">Não Permitir</span>. Isso também impede que ela instale um VPN para furar o filtro da rede.</span></li>
+              <li><span class="passo-txt">Em <span class="tecla">Sempre Permitidos</span>, garanta que Telefone e Mensagens continuem liberados durante o Tempo Longe da Tela.</span></li>
+            </ol>
+            <div class="bloco b-confirma">
+              <span class="rot"><svg aria-hidden="true"><use href="#i-olho"></use></svg>Como saber que deu certo</span>
+              <p>Peça o aparelho emprestado dentro do horário bloqueado: os ícones ficam apagados, com uma ampulheta ao lado. Ao tocar, aparece a tela de limite pedindo o código.</p>
+            </div>
+            <div class="bloco b-limita">
+              <span class="rot"><svg aria-hidden="true"><use href="#i-traco-c"></use></svg>O que isso não resolve</span>
+              <ul>
+                <li>Se ela souber o código do Tempo de Uso, tudo cai. É o ponto de falha número um.</li>
+                <li>Não cobre outros aparelhos da casa.</li>
+              </ul>
+            </div>
+            <div class="links">
+              <a class="link-inst" href="https://www.apple.com/br/families/" target="_blank" rel="noopener"><span class="marca-glifo g-apple"></span>Apple para famílias<svg aria-hidden="true"><use href="#i-ext"></use></svg></a>
+            </div>
+          </div>
+        </details>
+
+        <details class="ficha" data-busca="mac macbook apple computador tempo de uso">
+          <summary>
+            <span class="marca-tile"><span class="marca-glifo g-apple"></span></span>
+            <span class="sum-txt">
+              <h3>Mac — Tempo de Uso</h3>
+              <span class="quem">A mesma lógica do iPhone, no computador. Se a criança já tem iPhone no Compartilhamento Familiar, os limites podem valer nos dois aparelhos somados.</span>
+            </span>
+            <span class="sum-meta">
+              <span class="n-passos">6 passos</span>
+              <svg class="chev" aria-hidden="true"><use href="#i-chev"></use></svg>
+            </span>
+          </summary>
+          <div class="corpo">
+            <div class="bloco b-antes">
+              <span class="rot"><svg aria-hidden="true"><use href="#i-alerta"></use></svg>Antes de começar</span>
+              <ul>
+                <li>Uma conta de usuário separada no Mac para a criança, com o Apple ID dela — não o seu.</li>
+                <li>O código de 4 dígitos do Tempo de Uso, diferente da senha do computador.</li>
+              </ul>
+            </div>
+            <div class="progresso"><div class="trilho"><i></i></div><span class="cont"></span></div>
+            <ol class="passos">
+              <li><span class="passo-txt">Faça login na conta da criança e abra <span class="tecla">Ajustes do Sistema</span> <span class="seta">›</span> <span class="tecla">Tempo de Uso</span>.</span></li>
+              <li><span class="passo-txt">Ligue <span class="tecla">Bloquear Ajustes do Tempo de Uso</span> e crie o código.</span></li>
+              <li><span class="passo-txt">Se ela já usa iPhone com o mesmo Apple ID, ligue <span class="tecla">Compartilhar entre Dispositivos</span> para que o tempo do celular e do computador contem juntos.</span></li>
+              <li><span class="passo-txt"><strong>Horários:</strong> em <span class="tecla">Tempo Longe da Tela</span>, defina a janela de bloqueio.</span></li>
+              <li><span class="passo-txt"><strong>Tempo por programa:</strong> em <span class="tecla">Limites de App</span>, toque em <span class="tecla">+</span>, marque a categoria ou o programa e defina a duração.</span></li>
+              <li><span class="passo-txt"><strong>Sites:</strong> em <span class="tecla">Restrições de Conteúdo e Privacidade</span> <span class="seta">›</span> <span class="tecla">Restrições de Conteúdo</span> <span class="seta">›</span> <span class="tecla">Acesso a Conteúdo da Web</span>, escolha <span class="tecla">Limitar Sites Adultos</span> ou <span class="tecla">Apenas Sites Permitidos</span>.</span></li>
+            </ol>
+            <div class="bloco b-confirma">
+              <span class="rot"><svg aria-hidden="true"><use href="#i-olho"></use></svg>Como saber que deu certo</span>
+              <p>Ao abrir um programa limitado depois do tempo, o Mac mostra uma tela cinza com o aviso de limite atingido e a opção de pedir mais tempo.</p>
+            </div>
+            <div class="bloco b-limita">
+              <span class="rot"><svg aria-hidden="true"><use href="#i-traco-c"></use></svg>O que isso não resolve</span>
+              <ul>
+                <li>Se ela usar a conta de administrador do Mac, pode desligar tudo.</li>
+              </ul>
+            </div>
+          </div>
+        </details>
+
+        <details class="ficha" data-busca="android family link google celular limite tempo chrome play">
+          <summary>
+            <span class="marca-tile"><span class="marca-glifo g-android"></span></span>
+            <span class="sum-txt">
+              <h3>Android — Family Link</h3>
+              <span class="quem">Gratuito e administrado pelo seu celular: limite diário, hora de dormir e aprovação de cada app novo.</span>
+            </span>
+            <span class="sum-meta">
+              <span class="n-passos">9 passos</span>
+              <svg class="chev" aria-hidden="true"><use href="#i-chev"></use></svg>
+            </span>
+          </summary>
+          <div class="corpo">
+            <div class="bloco b-antes">
+              <span class="rot"><svg aria-hidden="true"><use href="#i-alerta"></use></svg>Antes de começar</span>
+              <ul>
+                <li>Os dois celulares em mãos na primeira configuração.</li>
+                <li>A conta Google da criança. Se ela tiver menos de 13 anos, a conta precisa ser criada dentro do próprio Family Link.</li>
+                <li>Reserve 20 minutos: a vinculação inicial é a parte mais demorada.</li>
+              </ul>
+            </div>
+            <div class="progresso"><div class="trilho"><i></i></div><span class="cont"></span></div>
+            <ol class="passos">
+              <li><span class="passo-txt">No <strong>seu</strong> celular, instale o <span class="tecla">Family Link</span> e entre com a sua conta Google.</span></li>
+              <li><span class="passo-txt">Toque em <span class="tecla">Adicionar</span> e escolha adicionar um filho ao grupo familiar.</span></li>
+              <li><span class="passo-txt">No <strong>celular dela</strong>, siga as instruções que aparecem na tela do seu app: entrar com a conta da criança e conceder as permissões de gerenciamento. Aceite todas.</span></li>
+              <li><span class="passo-txt">De volta ao seu celular, abra o perfil dela e toque em <span class="tecla">Controles</span>.</span></li>
+              <li><span class="passo-txt"><strong>Limite diário e hora de dormir:</strong> em <span class="tecla">Limites de tempo de tela</span>, defina o total diário e o <span class="tecla">Horário de dormir</span>.</span></li>
+              <li><span class="passo-txt"><strong>Limite por aplicativo:</strong> em <span class="tecla">Limites de apps</span>, toque no aplicativo e defina o tempo diário — ou toque no cadeado para bloqueá-lo por completo.</span></li>
+              <li><span class="passo-txt"><strong>Aprovar instalações:</strong> em <span class="tecla">Filtros de conteúdo</span> <span class="seta">›</span> <span class="tecla">Google Play</span>, exija aprovação para downloads e defina a classificação indicativa máxima.</span></li>
+              <li><span class="passo-txt"><strong>Bloquear sites:</strong> em <span class="tecla">Filtros de conteúdo</span> <span class="seta">›</span> <span class="tecla">Google Chrome</span>, escolha <span class="tecla">Tentar bloquear sites explícitos</span> — ou, para crianças menores, <span class="tecla">Permitir apenas sites aprovados</span>.</span></li>
+              <li><span class="passo-txt">Ative também a <span class="tecla">Pesquisa segura</span> e o modo restrito do <span class="tecla">YouTube</span>.</span></li>
+            </ol>
+            <div class="bloco b-confirma">
+              <span class="rot"><svg aria-hidden="true"><use href="#i-olho"></use></svg>Como saber que deu certo</span>
+              <p>Quando o limite diário acaba, a tela dela é bloqueada com o aviso de pausa. No seu celular, o painel passa a mostrar quanto tempo ela usou cada app hoje.</p>
+            </div>
+            <div class="bloco b-limita">
+              <span class="rot"><svg aria-hidden="true"><use href="#i-traco-c"></use></svg>O que isso não resolve</span>
+              <ul>
+                <li>O filtro de sites só vale no Chrome. Se ela instalar outro navegador, ele passa livre — por isso a aprovação de downloads é obrigatória aqui, não opcional.</li>
+                <li>A partir dos 13 anos, o adolescente pode desvincular a conta sozinho; você recebe um aviso, mas não consegue impedir.</li>
+              </ul>
+            </div>
+            <div class="links">
+              <a class="link-inst" href="https://families.google/intl/pt-BR/familylink/" target="_blank" rel="noopener"><span class="marca-glifo g-google"></span>Site oficial<svg aria-hidden="true"><use href="#i-ext"></use></svg></a>
+              <a class="link-inst" href="https://play.google.com/store/search?q=family%20link&c=apps" target="_blank" rel="noopener"><span class="marca-glifo" style="-webkit-mask-image:url('public/logos/googleplay.svg');mask-image:url('public/logos/googleplay.svg')"></span>Google Play<svg aria-hidden="true"><use href="#i-ext"></use></svg></a>
+              <a class="link-inst" href="https://apps.apple.com/br/search?term=family%20link" target="_blank" rel="noopener"><span class="marca-glifo" style="-webkit-mask-image:url('public/logos/appstore.svg');mask-image:url('public/logos/appstore.svg')"></span>App Store<svg aria-hidden="true"><use href="#i-ext"></use></svg></a>
             </div>
           </div>
         </details>
@@ -585,106 +731,6 @@
           </div>
         </details>
 
-        <details class="ficha" data-busca="iphone ipad apple tempo de uso screen time restricoes ios">
-          <summary>
-            <span class="marca-tile"><span class="marca-glifo g-apple"></span></span>
-            <span class="sum-txt">
-              <h3>iPhone e iPad — Tempo de Uso</h3>
-              <span class="quem">Gratuito e já está no aparelho. Se você não vai assinar nada, é aqui que o controle de horário e de tempo por app acontece.</span>
-            </span>
-            <span class="sum-meta">
-              <span class="n-passos">8 passos</span>
-              <svg class="chev" aria-hidden="true"><use href="#i-chev"></use></svg>
-            </span>
-          </summary>
-          <div class="corpo">
-            <div class="bloco b-antes">
-              <span class="rot"><svg aria-hidden="true"><use href="#i-alerta"></use></svg>Antes de começar</span>
-              <ul>
-                <li>O iPhone da criança em mãos — ou, se ela estiver no seu Compartilhamento Familiar, dá para fazer tudo do seu próprio iPhone.</li>
-                <li>Escolha um código de 4 dígitos <strong>diferente</strong> do código de desbloqueio do aparelho. É este passo que decide se o controle vai durar uma semana ou um ano.</li>
-              </ul>
-            </div>
-            <div class="progresso"><div class="trilho"><i></i></div><span class="cont"></span></div>
-            <ol class="passos">
-              <li><span class="passo-txt">Abra <span class="tecla">Ajustes</span> <span class="seta">›</span> <span class="tecla">Tempo de Uso</span>.</span></li>
-              <li><span class="passo-txt">Toque em <span class="tecla">Bloquear Ajustes do Tempo de Uso</span> e crie o código. Guarde-o fora do alcance dela; sem isso, qualquer limite é desfeito em dez segundos.</span></li>
-              <li><span class="passo-txt"><strong>Horário de dormir:</strong> toque em <span class="tecla">Tempo Longe da Tela</span>, ligue a chave e defina início e fim — por exemplo, das 21h30 às 6h30.</span></li>
-              <li><span class="passo-txt"><strong>Limite por aplicativo:</strong> volte e toque em <span class="tecla">Limites de App</span> <span class="seta">›</span> <span class="tecla">Adicionar Limite</span>. Marque a categoria (<span class="tecla">Redes Sociais</span>, <span class="tecla">Jogos</span>), toque em <span class="tecla">Avançar</span> e defina a duração diária.</span></li>
-              <li><span class="passo-txt">Ainda na tela do limite, ligue <span class="tecla">Bloquear no Fim do Limite</span>. Sem essa opção, o aviso é ignorado com um toque.</span></li>
-              <li><span class="passo-txt"><strong>Sites adultos:</strong> volte e toque em <span class="tecla">Restrições de Conteúdo e Privacidade</span> <span class="seta">›</span> <span class="tecla">Restrições de Conteúdo</span> <span class="seta">›</span> <span class="tecla">Conteúdo da Web</span> <span class="seta">›</span> <span class="tecla">Limitar Sites Adultos</span>.</span></li>
-              <li><span class="passo-txt"><strong>Travar instalação de apps:</strong> em <span class="tecla">Restrições de Conteúdo e Privacidade</span> <span class="seta">›</span> <span class="tecla">Compras na App Store</span>, defina <span class="tecla">Instalar Apps</span> como <span class="tecla">Não Permitir</span>. Isso também impede que ela instale um VPN para furar o filtro da rede.</span></li>
-              <li><span class="passo-txt">Em <span class="tecla">Sempre Permitidos</span>, garanta que Telefone e Mensagens continuem liberados durante o Tempo Longe da Tela.</span></li>
-            </ol>
-            <div class="bloco b-confirma">
-              <span class="rot"><svg aria-hidden="true"><use href="#i-olho"></use></svg>Como saber que deu certo</span>
-              <p>Peça o aparelho emprestado dentro do horário bloqueado: os ícones ficam apagados, com uma ampulheta ao lado. Ao tocar, aparece a tela de limite pedindo o código.</p>
-            </div>
-            <div class="bloco b-limita">
-              <span class="rot"><svg aria-hidden="true"><use href="#i-traco-c"></use></svg>O que isso não resolve</span>
-              <ul>
-                <li>Se ela souber o código do Tempo de Uso, tudo cai. É o ponto de falha número um.</li>
-                <li>Não cobre outros aparelhos da casa.</li>
-              </ul>
-            </div>
-            <div class="links">
-              <a class="link-inst" href="https://www.apple.com/br/families/" target="_blank" rel="noopener"><span class="marca-glifo g-apple"></span>Apple para famílias<svg aria-hidden="true"><use href="#i-ext"></use></svg></a>
-            </div>
-          </div>
-        </details>
-
-        <details class="ficha" data-busca="android family link google celular limite tempo chrome play">
-          <summary>
-            <span class="marca-tile"><span class="marca-glifo g-android"></span></span>
-            <span class="sum-txt">
-              <h3>Android — Family Link</h3>
-              <span class="quem">Gratuito e administrado pelo seu celular: limite diário, hora de dormir e aprovação de cada app novo.</span>
-            </span>
-            <span class="sum-meta">
-              <span class="n-passos">9 passos</span>
-              <svg class="chev" aria-hidden="true"><use href="#i-chev"></use></svg>
-            </span>
-          </summary>
-          <div class="corpo">
-            <div class="bloco b-antes">
-              <span class="rot"><svg aria-hidden="true"><use href="#i-alerta"></use></svg>Antes de começar</span>
-              <ul>
-                <li>Os dois celulares em mãos na primeira configuração.</li>
-                <li>A conta Google da criança. Se ela tiver menos de 13 anos, a conta precisa ser criada dentro do próprio Family Link.</li>
-                <li>Reserve 20 minutos: a vinculação inicial é a parte mais demorada.</li>
-              </ul>
-            </div>
-            <div class="progresso"><div class="trilho"><i></i></div><span class="cont"></span></div>
-            <ol class="passos">
-              <li><span class="passo-txt">No <strong>seu</strong> celular, instale o <span class="tecla">Family Link</span> e entre com a sua conta Google.</span></li>
-              <li><span class="passo-txt">Toque em <span class="tecla">Adicionar</span> e escolha adicionar um filho ao grupo familiar.</span></li>
-              <li><span class="passo-txt">No <strong>celular dela</strong>, siga as instruções que aparecem na tela do seu app: entrar com a conta da criança e conceder as permissões de gerenciamento. Aceite todas.</span></li>
-              <li><span class="passo-txt">De volta ao seu celular, abra o perfil dela e toque em <span class="tecla">Controles</span>.</span></li>
-              <li><span class="passo-txt"><strong>Limite diário e hora de dormir:</strong> em <span class="tecla">Limites de tempo de tela</span>, defina o total diário e o <span class="tecla">Horário de dormir</span>.</span></li>
-              <li><span class="passo-txt"><strong>Limite por aplicativo:</strong> em <span class="tecla">Limites de apps</span>, toque no aplicativo e defina o tempo diário — ou toque no cadeado para bloqueá-lo por completo.</span></li>
-              <li><span class="passo-txt"><strong>Aprovar instalações:</strong> em <span class="tecla">Filtros de conteúdo</span> <span class="seta">›</span> <span class="tecla">Google Play</span>, exija aprovação para downloads e defina a classificação indicativa máxima.</span></li>
-              <li><span class="passo-txt"><strong>Bloquear sites:</strong> em <span class="tecla">Filtros de conteúdo</span> <span class="seta">›</span> <span class="tecla">Google Chrome</span>, escolha <span class="tecla">Tentar bloquear sites explícitos</span> — ou, para crianças menores, <span class="tecla">Permitir apenas sites aprovados</span>.</span></li>
-              <li><span class="passo-txt">Ative também a <span class="tecla">Pesquisa segura</span> e o modo restrito do <span class="tecla">YouTube</span>.</span></li>
-            </ol>
-            <div class="bloco b-confirma">
-              <span class="rot"><svg aria-hidden="true"><use href="#i-olho"></use></svg>Como saber que deu certo</span>
-              <p>Quando o limite diário acaba, a tela dela é bloqueada com o aviso de pausa. No seu celular, o painel passa a mostrar quanto tempo ela usou cada app hoje.</p>
-            </div>
-            <div class="bloco b-limita">
-              <span class="rot"><svg aria-hidden="true"><use href="#i-traco-c"></use></svg>O que isso não resolve</span>
-              <ul>
-                <li>O filtro de sites só vale no Chrome. Se ela instalar outro navegador, ele passa livre — por isso a aprovação de downloads é obrigatória aqui, não opcional.</li>
-                <li>A partir dos 13 anos, o adolescente pode desvincular a conta sozinho; você recebe um aviso, mas não consegue impedir.</li>
-              </ul>
-            </div>
-            <div class="links">
-              <a class="link-inst" href="https://families.google/intl/pt-BR/familylink/" target="_blank" rel="noopener"><span class="marca-glifo g-google"></span>Site oficial<svg aria-hidden="true"><use href="#i-ext"></use></svg></a>
-              <a class="link-inst" href="https://play.google.com/store/search?q=family%20link&c=apps" target="_blank" rel="noopener"><span class="marca-glifo" style="-webkit-mask-image:url('public/logos/googleplay.svg');mask-image:url('public/logos/googleplay.svg')"></span>Google Play<svg aria-hidden="true"><use href="#i-ext"></use></svg></a>
-              <a class="link-inst" href="https://apps.apple.com/br/search?term=family%20link" target="_blank" rel="noopener"><span class="marca-glifo" style="-webkit-mask-image:url('public/logos/appstore.svg');mask-image:url('public/logos/appstore.svg')"></span>App Store<svg aria-hidden="true"><use href="#i-ext"></use></svg></a>
-            </div>
-          </div>
-        </details>
-
         <details class="ficha" data-busca="windows pc computador microsoft seguranca da familia edge conta">
           <summary>
             <span class="marca-tile"><span class="ms-quad" aria-hidden="true"><i></i><i></i><i></i><i></i></span></span>
@@ -730,48 +776,6 @@
               <a class="link-inst" href="https://family.microsoft.com" target="_blank" rel="noopener">Painel oficial<svg aria-hidden="true"><use href="#i-ext"></use></svg></a>
               <a class="link-inst" href="https://play.google.com/store/search?q=microsoft%20family%20safety&c=apps" target="_blank" rel="noopener"><span class="marca-glifo" style="-webkit-mask-image:url('public/logos/googleplay.svg');mask-image:url('public/logos/googleplay.svg')"></span>Google Play<svg aria-hidden="true"><use href="#i-ext"></use></svg></a>
               <a class="link-inst" href="https://apps.apple.com/br/search?term=microsoft%20family%20safety" target="_blank" rel="noopener"><span class="marca-glifo" style="-webkit-mask-image:url('public/logos/appstore.svg');mask-image:url('public/logos/appstore.svg')"></span>App Store<svg aria-hidden="true"><use href="#i-ext"></use></svg></a>
-            </div>
-          </div>
-        </details>
-
-        <details class="ficha" data-busca="mac macbook apple computador tempo de uso">
-          <summary>
-            <span class="marca-tile"><span class="marca-glifo g-apple"></span></span>
-            <span class="sum-txt">
-              <h3>Mac — Tempo de Uso</h3>
-              <span class="quem">A mesma lógica do iPhone, no computador. Se a criança já tem iPhone no Compartilhamento Familiar, os limites podem valer nos dois aparelhos somados.</span>
-            </span>
-            <span class="sum-meta">
-              <span class="n-passos">6 passos</span>
-              <svg class="chev" aria-hidden="true"><use href="#i-chev"></use></svg>
-            </span>
-          </summary>
-          <div class="corpo">
-            <div class="bloco b-antes">
-              <span class="rot"><svg aria-hidden="true"><use href="#i-alerta"></use></svg>Antes de começar</span>
-              <ul>
-                <li>Uma conta de usuário separada no Mac para a criança, com o Apple ID dela — não o seu.</li>
-                <li>O código de 4 dígitos do Tempo de Uso, diferente da senha do computador.</li>
-              </ul>
-            </div>
-            <div class="progresso"><div class="trilho"><i></i></div><span class="cont"></span></div>
-            <ol class="passos">
-              <li><span class="passo-txt">Faça login na conta da criança e abra <span class="tecla">Ajustes do Sistema</span> <span class="seta">›</span> <span class="tecla">Tempo de Uso</span>.</span></li>
-              <li><span class="passo-txt">Ligue <span class="tecla">Bloquear Ajustes do Tempo de Uso</span> e crie o código.</span></li>
-              <li><span class="passo-txt">Se ela já usa iPhone com o mesmo Apple ID, ligue <span class="tecla">Compartilhar entre Dispositivos</span> para que o tempo do celular e do computador contem juntos.</span></li>
-              <li><span class="passo-txt"><strong>Horários:</strong> em <span class="tecla">Tempo Longe da Tela</span>, defina a janela de bloqueio.</span></li>
-              <li><span class="passo-txt"><strong>Tempo por programa:</strong> em <span class="tecla">Limites de App</span>, toque em <span class="tecla">+</span>, marque a categoria ou o programa e defina a duração.</span></li>
-              <li><span class="passo-txt"><strong>Sites:</strong> em <span class="tecla">Restrições de Conteúdo e Privacidade</span> <span class="seta">›</span> <span class="tecla">Restrições de Conteúdo</span> <span class="seta">›</span> <span class="tecla">Acesso a Conteúdo da Web</span>, escolha <span class="tecla">Limitar Sites Adultos</span> ou <span class="tecla">Apenas Sites Permitidos</span>.</span></li>
-            </ol>
-            <div class="bloco b-confirma">
-              <span class="rot"><svg aria-hidden="true"><use href="#i-olho"></use></svg>Como saber que deu certo</span>
-              <p>Ao abrir um programa limitado depois do tempo, o Mac mostra uma tela cinza com o aviso de limite atingido e a opção de pedir mais tempo.</p>
-            </div>
-            <div class="bloco b-limita">
-              <span class="rot"><svg aria-hidden="true"><use href="#i-traco-c"></use></svg>O que isso não resolve</span>
-              <ul>
-                <li>Se ela usar a conta de administrador do Mac, pode desligar tudo.</li>
-              </ul>
             </div>
           </div>
         </details>

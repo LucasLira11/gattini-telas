@@ -110,6 +110,23 @@
     pintar();
   });
 
+  /* ---------- link direto para um tutorial ----------
+     O botão do herói aponta para #tutorial-iphone. Abrir a ficha e rolar
+     até ela evita que a pessoa caia numa ficha fechada sem entender. */
+  function abrirPeloEndereco() {
+    var id = (location.hash || '').slice(1);
+    if (!id) return;
+    var alvo = document.getElementById(id);
+    if (!alvo || alvo.tagName !== 'DETAILS') return;
+    alvo.open = true;
+    alvo.hidden = false;
+    requestAnimationFrame(function () {
+      alvo.scrollIntoView({ block: 'start', behavior: 'smooth' });
+    });
+  }
+  window.addEventListener('hashchange', abrirPeloEndereco);
+  abrirPeloEndereco();
+
   /* ---------- abrir e fechar todas as fichas ---------- */
   var btnExpandir = document.getElementById('expandir');
   var textoExpandir = btnExpandir ? btnExpandir.querySelector('span') : null;
