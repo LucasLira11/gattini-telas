@@ -33,6 +33,29 @@ O endereço dela está declarado como **URL absoluta** no `index.html`
 (`og:image`). Se o site mudar de domínio, essa linha precisa ser atualizada
 junto — caminho relativo não funciona no WhatsApp.
 
+## `logos/` — marcas dos aplicativos
+
+As logos oficiais das empresas citadas no guia, em SVG, vindas do projeto
+Simple Icons: Apple, Android, Google, TP-Link, NextDNS, YouTube, Netflix,
+App Store e Google Play.
+
+Elas são aplicadas por `mask-image` no CSS, não por `<img>`. Isso permite
+pintá-las na cor oficial de cada marca sem tocar no arquivo, e mantém tudo
+nítido em qualquer tela. As classes ficam em `assets/styles.css`, no bloco
+"marcas dos aplicativos" — para acrescentar uma, basta o arquivo SVG aqui e
+uma classe `.g-nome` lá.
+
+Três marcas do guia **não** têm logo oficial disponível para redistribuição:
+
+- **Microsoft** — o quadrado de quatro cores é desenhado direto em HTML e CSS
+  (`.ms-quad`), nas cores oficiais.
+- **Qustodio** — representada pela letra "Q" na tipografia do site.
+- **Vivo, Claro, TIM e Oi** — o cartão trata das operadoras em conjunto, então
+  usa o ícone de Wi-Fi em vez de uma marca específica.
+
+Se você conseguir os arquivos oficiais dessas marcas, coloque-os aqui e troque
+o elemento correspondente no `index.html`.
+
 ## `favicon.png` — 256×256
 
 O ícone da aba do navegador: o "G" do logo recortado sobre fundo areia. Também

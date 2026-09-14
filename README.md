@@ -14,7 +14,8 @@ gattini-telas/
 │   ├── logo-gattini-dark.png   ← logo em tinta, para o tema claro e a impressão
 │   ├── logo-gattini-white.png  ← logo em branco, para o tema escuro
 │   ├── capa.png                ← 1200×630, cartão do WhatsApp
-│   └── favicon.png             ← o "G" do logo
+│   ├── favicon.png             ← o "G" do logo
+│   └── logos/                  ← marcas oficiais dos aplicativos citados
 └── docs/
     ├── PROMPT.md               ← especificação para regerar o site em Astro
     └── gerar-capa.ps1          ← refaz capa.png e favicon.png a partir do logo
@@ -104,10 +105,13 @@ com as palavras pelas quais ela deve ser encontrada.
 `:root`. O tema escuro repete os mesmos nomes mais abaixo — mude nos dois
 lugares.
 
-**Os ícones das ferramentas** são desenhos genéricos feitos para este site, não
-as marcas oficiais dos produtos. Se quiser usar os logos reais, coloque os
-arquivos em `public/logos/` e troque o `<svg><use .../></svg>` de cada cartão
-por `<img src="public/logos/nome.svg" alt="">`.
+**Trocar as cores:** os tokens vivem no topo de `assets/styles.css`, no bloco
+`:root`. O tema escuro repete os mesmos nomes logo abaixo — mude nos dois
+lugares e o site inteiro acompanha.
+
+**As marcas dos aplicativos** ficam em `public/logos/` e são aplicadas por
+`mask-image`. Veja `public/LEIA-ME.md` para como acrescentar uma, e para a
+lista das três marcas que não têm logo oficial disponível.
 
 **Os links das lojas** apontam para a busca (`/search?term=...`) em vez do ID do
 aplicativo. É de propósito: IDs de app mudam e quebram, a busca nunca dá 404.
