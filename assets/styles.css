@@ -298,9 +298,11 @@ section:first-of-type{border-top:0}
 .heroi-acoes{display:flex;gap:12px;flex-wrap:wrap;margin-top:6px}
 
 /* peça gráfica: mockup abstrato de um limite de tela */
-.heroi-arte{display:flex;justify-content:center;position:relative}
+.heroi-arte{display:flex;justify-content:center;position:relative;overflow:hidden}
 .aura{
-  position:absolute;inset:-6% -12%;z-index:0;pointer-events:none;
+  /* mantido dentro da própria coluna: qualquer sangria lateral cria
+     rolagem horizontal no celular */
+  position:absolute;inset:-6% 0;z-index:0;pointer-events:none;
   background:radial-gradient(60% 55% at 50% 42%, color-mix(in srgb,var(--brand) 14%,transparent), transparent 72%);
 }
 .aparelho{
@@ -365,7 +367,7 @@ section:first-of-type{border-top:0}
 @media (prefers-color-scheme: light){:root:not([data-theme="dark"]) .btn-1{color:#fff}}
 .btn-2{background:var(--paper);color:var(--ink);border-color:var(--line-2)}
 .btn-2:hover{background:var(--sunken);color:var(--ink)}
-.btn-3{background:transparent;color:var(--ink-2);border-color:transparent;padding-inline:12px}
+.btn-3{background:transparent;color:var(--ink-2);border-color:transparent}
 .btn-3:hover{background:var(--sunken);color:var(--ink)}
 
 /* ---------- 7. marcas dos aplicativos ---------- */
