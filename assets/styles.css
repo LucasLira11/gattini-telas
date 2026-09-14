@@ -170,6 +170,19 @@ a:hover{color:var(--gold-ink);text-decoration-color:currentColor}
 }
 .marca{display:flex;align-items:center;text-decoration:none;flex:0 0 auto}
 .marca .logo{height:50px;width:auto;display:block}
+
+/* O logo tem duas artes: tinta escura para fundo claro, branca para fundo
+   escuro. Só uma aparece por vez, nos três estados de tema. */
+.logo-escuro{display:none}
+.logo-claro{display:block}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .logo-claro{display:none}
+  :root:not([data-theme="light"]) .logo-escuro{display:block}
+}
+:root[data-theme="dark"] .logo-claro{display:none}
+:root[data-theme="dark"] .logo-escuro{display:block}
+:root[data-theme="light"] .logo-claro{display:block}
+:root[data-theme="light"] .logo-escuro{display:none}
 @media (max-width:760px){.marca .logo{height:42px}}
 @media (max-width:420px){:root{--topo:70px}.marca .logo{height:34px}}
 
