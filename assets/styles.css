@@ -41,7 +41,7 @@
   --r-md:14px;
   --r-lg:20px;
 
-  --topo:80px;
+  --topo:92px;
   --gap-sec:clamp(56px,8vw,104px);
 
   --t-fast:150ms cubic-bezier(.32,.72,.35,1);
@@ -171,7 +171,7 @@ a:hover{color:var(--gold-ink);text-decoration-color:currentColor}
 .marca{display:flex;align-items:center;text-decoration:none;flex:0 0 auto}
 /* Sem `display` aqui de propósito: quem manda no display do logo são as
    regras de tema logo abaixo, que têm especificidade menor. */
-.marca .logo{height:50px;width:auto}
+.marca .logo{height:62px;width:auto}
 
 /* O logo tem duas artes: tinta escura para fundo claro, branca para fundo
    escuro. Só uma aparece por vez, nos três estados de tema. */
@@ -185,8 +185,8 @@ a:hover{color:var(--gold-ink);text-decoration-color:currentColor}
 :root[data-theme="dark"] .logo-escuro{display:block}
 :root[data-theme="light"] .logo-claro{display:block}
 :root[data-theme="light"] .logo-escuro{display:none}
-@media (max-width:760px){.marca .logo{height:42px}}
-@media (max-width:420px){:root{--topo:70px}.marca .logo{height:34px}}
+@media (max-width:760px){.marca .logo{height:50px}}
+@media (max-width:420px){:root{--topo:76px}.marca .logo{height:40px}}
 
 .topnav{margin-left:auto;display:flex;align-items:center;gap:2px}
 .topnav a{
@@ -528,7 +528,10 @@ summary{
   transition:background var(--t-fast);
 }
 summary::-webkit-details-marker{display:none}
-summary:hover{background:var(--gold-soft)}
+/* O realce só faz sentido enquanto a ficha está fechada e é um alvo de
+   clique. Com a ficha aberta ele encostava no bloco "Antes de começar". */
+details.ficha:not([open]) > summary:hover{background:var(--gold-soft)}
+details.ficha[open] > summary{border-bottom:1px solid var(--line)}
 .sum-txt{display:flex;flex-direction:column;gap:3px;flex:1;min-width:0}
 .sum-txt h3{font-size:1.0625rem}
 .sum-txt .quem{font-size:.86rem;color:var(--ink-2);line-height:1.5}
@@ -543,7 +546,7 @@ summary:hover{background:var(--gold-soft)}
 .chev{width:20px;height:20px;color:var(--ink-3);transition:transform var(--t-med);flex:0 0 auto}
 details[open] .chev{transform:rotate(90deg);color:var(--gold)}
 
-.corpo{padding:0 20px 24px;display:flex;flex-direction:column;gap:22px}
+.corpo{padding:22px 20px 26px;display:flex;flex-direction:column;gap:22px}
 @media (min-width:721px){.corpo{padding-inline:28px}}
 .corpo > p{font-size:.9375rem;color:var(--ink-2);max-width:64ch}
 

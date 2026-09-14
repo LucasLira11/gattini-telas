@@ -147,16 +147,6 @@
     rotularExpandir();
   }
 
-  /* ---------- salvar em PDF ---------- */
-  var btnImprimir = document.getElementById('imprimir');
-  if (btnImprimir) {
-    btnImprimir.addEventListener('click', function () {
-      fichas.forEach(function (f) { f.open = true; });
-      rotularExpandir();
-      window.print();
-    });
-  }
-
   /* ---------- busca ---------- */
   var campo = document.getElementById('q');
   var vazio = document.getElementById('vazio');
